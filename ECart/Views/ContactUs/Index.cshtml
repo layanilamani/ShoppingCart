@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="container form">
+        <h2>Contact Us</h2>
+        <div class="form-group">
+            @Html.Label("Name")
+            @Html.TextBox("Name")
+        </div>
+        <div class="form-group">
+            @Html.Label("Email")
+            @Html.TextBox("Email")
+        </div>
+        <div class="form-group">
+            @Html.Label("Message")
+            @Html.TextArea("Message")
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit" />
+        </div>
+    </div>
+}
